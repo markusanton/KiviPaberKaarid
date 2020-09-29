@@ -12,8 +12,12 @@ namespace KiviPaberKaarid
             int userState = 0;
             int computerState = 0;
 
+            Console.WriteLine("Hello, what's your name?");
+            string userName = Console.ReadLine();
+            Console.WriteLine($"Hello, {userName}! Welcome to rock, paper, scissors!");
             while (userState < 3 && computerState < 3)
             {
+       
                 Console.WriteLine("Rock, paper, or scissors?");
                 userInput = Console.ReadLine().ToLower();
 
